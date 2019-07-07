@@ -44,20 +44,4 @@ Kirigami.FormLayout {
     Item {
         Kirigami.FormData.isSection: true
     }
-
-
-    QtControls.RadioButton {
-        Kirigami.FormData.label: i18nc("What information is shown in the calendar icon", "Compact version:")
-
-        text: i18nc("Show the number of the day (eg. 31) in the icon", "Show day of the month")
-
-        checked: cfg_compactDisplay == "d"
-        onCheckedChanged: if (checked) cfg_compactDisplay = "d"
-    }
-    QtControls.RadioButton {
-        text: i18nc("Show the week number (eg. 50) in the icon", "Show week number")
-
-        checked: cfg_compactDisplay == "w"
-        onCheckedChanged: if (checked) cfg_compactDisplay = "w"
-    }
 }

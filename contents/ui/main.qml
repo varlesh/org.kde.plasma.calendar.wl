@@ -73,10 +73,6 @@ Item {
                     var d = new Date(dataSource.data.Local.DateTime)
                     var format = plasmoid.configuration.compactDisplay
 
-                    if (format === "w") {
-                        return plasmoid.nativeInterface.weekNumber(d)
-                    }
-
                     return Qt.formatDate(d, format)
                 }
                 fontSizeMode: Text.Fit
