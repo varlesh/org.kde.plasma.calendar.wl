@@ -63,11 +63,36 @@ Item {
                 anchors {
                     fill: parent
                     margins: Math.round(parent.width * 0.1)
+                    topMargin: Math.round((parent.width - parent.width * 0.14) * 0.8)
+                    bottomMargin: Math.round(parent.width * 0.17)
                 }
                 height: undefined
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: 1000
+                color: "#ffffff"
+                minimumPointSize: theme.smallestFont.pointSize
+                text: {
+                    var d = new Date(dataSource.data.Local.DateTime)
+                    var format = "MMM"
+
+                    return Qt.formatDate(d, format)
+                }
+                fontSizeMode: Text.Fit
+            }
+            
+            PlasmaComponents.Label {
+                anchors {
+                    fill: parent
+                    margins: Math.round(parent.width * 0.04)
+                    bottomMargin: Math.round((parent.width - parent.width * 0.1) * 0.2)
+                }
+                height: undefined
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.pixelSize: 1000
+                font.bold: true
+                color: "#ffffff"
                 minimumPointSize: theme.smallestFont.pointSize
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
