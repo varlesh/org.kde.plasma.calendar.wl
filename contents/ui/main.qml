@@ -25,6 +25,8 @@ import org.kde.plasma.components 2.0 as PlasmaComponents
 
 import org.kde.plasma.calendar 2.0
 
+import "calendar" as LocalCalendar
+
 Item {
     Plasmoid.switchWidth: units.gridUnit * 12
     Plasmoid.switchHeight: units.gridUnit * 12
@@ -57,7 +59,7 @@ Item {
 
         PlasmaCore.IconItem {
             anchors.fill: parent
-            source: Qt.resolvedUrl("../images/mini-calendar.svg")
+            source: Qt.resolvedUrl('../icons/mini-calendar-widget.svg')
 
             PlasmaComponents.Label {
                 anchors {
@@ -70,7 +72,7 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: 1000
-                color: "#ffffff"
+                color: "#4f4f4f"
                 minimumPointSize: theme.smallestFont.pointSize
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
@@ -84,7 +86,7 @@ Item {
             PlasmaComponents.Label {
                 anchors {
                     fill: parent
-                    margins: Math.round(parent.width * 0.04)
+                    margins: Math.round(parent.width * 0.17)
                     bottomMargin: Math.round((parent.width - parent.width * 0.1) * 0.2)
                 }
                 height: undefined
@@ -92,7 +94,7 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: 1000
                 font.bold: true
-                color: "#ffffff"
+                color: "#4f4f4f"
                 minimumPointSize: theme.smallestFont.pointSize
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
@@ -105,22 +107,13 @@ Item {
         }
     }
 
-    Plasmoid.fullRepresentation: Item {
+    Plasmoid.fullRepresentation: LocalCalendar.MonthView {
+        Layout.minimumWidth: units.gridUnit * 20
+        Layout.minimumHeight: units.gridUnit * 20
 
-        // sizing taken from digital clock
-        readonly property int _minimumWidth: calendar.showWeekNumbers ? Math.round(_minimumHeight * 1.75) : Math.round(_minimumHeight * 1.5)
-        readonly property int _minimumHeight: units.gridUnit * 14
+        today: dataSource.data["Local"]["DateTime"]
 
-        Layout.preferredWidth: _minimumWidth
-        Layout.preferredHeight: Math.round(_minimumHeight * 1.5)
-
-        MonthView {
-            id: calendar
-            borderOpacity: 0
-            today: dataSource.data["Local"]["DateTime"]
-            showWeekNumbers: plasmoid.configuration.showWeekNumbers
-
-            anchors.fill: parent
-        }
+        borderOpacity: 0
+        circleStyle: true
     }
 }
