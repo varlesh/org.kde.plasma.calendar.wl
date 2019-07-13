@@ -65,12 +65,12 @@ Item {
                 anchors {
                     fill: parent
                     margins: Math.round(parent.width * 0.1)
-                    topMargin: Math.round((parent.width - parent.width * 0.14) * 0.8)
-                    bottomMargin: Math.round(parent.width * 0.17)
+                    topMargin: Math.round((parent.width - parent.width * 0.2) * 0.7)
+                    bottomMargin: Math.round(parent.width * 0.07)
                 }
                 height: undefined
                 horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
+                verticalAlignment: Text.AlignBottom
                 font.pixelSize: 1000
                 color: "#4f4f4f"
                 minimumPointSize: theme.smallestFont.pointSize
