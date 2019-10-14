@@ -3,10 +3,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
-  <kcfgfile name=""/>
+    <kcfgfile name=""/>
 
-    <entry name="compactDisplay" type="String">
-        <default>d</default>
-    </entry>
-  </group>
+    <group name="Appearance">
+        <entry name="icon" type="String">
+            <label>Icon</label>
+            <default>mini-calendar-widget</default>
+        </entry>
+        <entry name="dayFontSize" type="Int">
+            <default>20</default>
+        </entry>
+        <entry name="dayHorizontalPosition" type="Int">
+            <default>20</default>
+        </entry>
+        <entry name="dayVerticalPosition" type="Int">
+            <default>20</default>
+        </entry>
+        <entry name="monthFontSize" type="Int">
+            <default>9</default>
+        </entry>
+        <entry name="monthHorizontalPosition" type="Int">
+            <default>20</default>
+        </entry>
+        <entry name="monthVerticalPosition" type="Int">
+            <default>20</default>
+        </entry>
+    </group>
+    
 </kcfg>

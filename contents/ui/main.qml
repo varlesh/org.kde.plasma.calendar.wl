@@ -16,15 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.0
+import QtQuick 2.2
 import QtQuick.Layouts 1.1
-
+import QtQuick.Controls 1.4
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
-
 import org.kde.plasma.calendar 2.0
-
 import "calendar" as LocalCalendar
 
 Item {
@@ -42,7 +40,7 @@ Item {
         format = format.replace(/(^dddd.?\s)|(,?\sdddd$)/, "");
         return Qt.formatDate(dataSource.data.Local.DateTime, format)
     }
-
+    
     Layout.minimumWidth: units.iconSizes.large
     Layout.minimumHeight: units.iconSizes.large
 
@@ -56,53 +54,51 @@ Item {
 
     Plasmoid.compactRepresentation: MouseArea {
         onClicked: plasmoid.expanded = !plasmoid.expanded
-
+        
         PlasmaCore.IconItem {
+            id: icon
             anchors.fill: parent
-            source: Qt.resolvedUrl('../icons/mini-calendar-widget.svg')
-
-            PlasmaComponents.Label {
+            source: plasmoid.configuration.icon
+            
+        PlasmaComponents.Label {
                 anchors {
                     fill: parent
-                    margins: Math.round(parent.width * 0.1)
-                    topMargin: Math.round((parent.width - parent.width * 0.2) * 0.7)
-                    bottomMargin: Math.round(parent.width * 0.07)
+                    leftMargin: plasmoid.configuration.monthHorizontalPosition
+                    topMargin: plasmoid.configuration.monthVerticalPosition
                 }
                 height: undefined
                 horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignBottom
-                font.pixelSize: 1000
+                verticalAlignment: Text.AlignVCenter
+                font.pixelSize: plasmoid.configuration.monthFontSize
+                font.pointSize: -1
                 color: "#4f4f4f"
-                minimumPointSize: theme.smallestFont.pointSize
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
                     var format = "MMM"
 
                     return Qt.formatDate(d, format)
                 }
-                fontSizeMode: Text.Fit
             }
             
             PlasmaComponents.Label {
                 anchors {
                     fill: parent
-                    margins: Math.round(parent.width * 0.17)
-                    bottomMargin: Math.round((parent.width - parent.width * 0.1) * 0.2)
+                    leftMargin: plasmoid.configuration.dayHorizontalPosition
+                    topMargin: plasmoid.configuration.dayVerticalPosition
+
                 }
-                height: undefined
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                font.pixelSize: 1000
+                font.pixelSize: plasmoid.configuration.dayFontSize
+                font.pointSize: -1
                 font.bold: true
                 color: "#4f4f4f"
-                minimumPointSize: theme.smallestFont.pointSize
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
-                    var format = plasmoid.configuration.compactDisplay
+                    var format = "d"
 
                     return Qt.formatDate(d, format)
                 }
-                fontSizeMode: Text.Fit
             }
         }
     }
