@@ -26,6 +26,7 @@ import org.kde.plasma.calendar 2.0
 import "calendar" as LocalCalendar
 
 Item {
+    
     Plasmoid.switchWidth: units.gridUnit * 12
     Plasmoid.switchHeight: units.gridUnit * 12
 
@@ -54,7 +55,7 @@ Item {
 
     Plasmoid.compactRepresentation: MouseArea {
         onClicked: plasmoid.expanded = !plasmoid.expanded
-        
+    
         PlasmaCore.IconItem {
             id: icon
             anchors.fill: parent
@@ -71,7 +72,7 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: plasmoid.configuration.monthFontSize
                 font.pointSize: -1
-                color: "#4f4f4f"
+                color: plasmoid.configuration.colorMonth
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
                     var format = "MMM"
@@ -92,7 +93,7 @@ Item {
                 font.pixelSize: plasmoid.configuration.dayFontSize
                 font.pointSize: -1
                 font.bold: true
-                color: "#4f4f4f"
+                color: plasmoid.configuration.colorDay
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
                     var format = "d"
