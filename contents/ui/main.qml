@@ -27,6 +27,8 @@ import "calendar" as LocalCalendar
 
 Item {
     
+    property int formatMonth: plasmoid.configuration.formatMonth
+    
     Plasmoid.switchWidth: units.gridUnit * 12
     Plasmoid.switchHeight: units.gridUnit * 12
 
@@ -75,7 +77,7 @@ Item {
                 color: plasmoid.configuration.colorMonth
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)
-                    var format = "MMM"
+                    var format = plasmoid.configuration.formatMonth
 
                     return Qt.formatDate(d, format)
                 }

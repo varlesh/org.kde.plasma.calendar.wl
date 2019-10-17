@@ -17,22 +17,25 @@
             <default>20</default>
         </entry>
         <entry name="dayHorizontalPosition" type="Int">
-            <default>20</default>
+            <default>1</default>
         </entry>
         <entry name="dayVerticalPosition" type="Int">
-            <default>20</default>
+            <default>3</default>
         </entry>
         <entry name="colorMonth" type="String">
             <default>#4f4f4f</default>
+        </entry>
+        <entry name="formatMonth" type="String">
+            <default>MMMM</default>
         </entry>
         <entry name="monthFontSize" type="Int">
             <default>9</default>
         </entry>
         <entry name="monthHorizontalPosition" type="Int">
-            <default>20</default>
+            <default>22</default>
         </entry>
         <entry name="monthVerticalPosition" type="Int">
-            <default>20</default>
+            <default>27</default>
         </entry>
     </group>
     

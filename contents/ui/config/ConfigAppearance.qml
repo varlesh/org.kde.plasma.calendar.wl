@@ -9,6 +9,7 @@ Item {
     property alias cfg_dayFontSize: dayFontSize.value
     property alias cfg_dayHorizontalPosition: dayHorizontalPosition.value
     property alias cfg_dayVerticalPosition: dayVerticalPosition.value
+    property string cfg_formatMonth: formatMonth.Index
     property alias cfg_colorMonth: colorMonth.text
     property alias cfg_monthFontSize: monthFontSize.value
     property alias cfg_monthHorizontalPosition: monthHorizontalPosition.value
@@ -102,10 +103,40 @@ Item {
         Label {
             Layout.row: 5
             Layout.column: 0
+            text: i18n("Month format:")
+        }
+        ComboBox {
+            id: formatMonth
+            textRole: "label"
+            Layout.alignment: Qt.AlignRight
+            model: [
+                {
+                    'label': i18n("Short"),
+                    'name': "MMM"
+                },
+                {
+                    'label': i18n("Long"),
+                    'name': "MMMM"
+                }
+            ]
+            onCurrentIndexChanged: cfg_formatMonth = model[currentIndex]["name"]
+
+            Component.onCompleted: {
+                for (var i = 0; i < model.length; i++) {
+                    if (model[i]["name"] === plasmoid.configuration.formatMonth) {
+                        formatMonth.currentIndex = i;
+                    }
+                }
+            }
+        }
+        
+        Label {
+            Layout.row: 6
+            Layout.column: 0
             text: i18n("Month color:")
         }
         TextField {
-                Layout.row: 5
+                Layout.row: 6
                 Layout.column: 1
                 id: colorMonth
                 Layout.fillWidth: false
@@ -114,12 +145,12 @@ Item {
             }
             
         Label {
-            Layout.row: 6
+            Layout.row: 7
             Layout.column: 0
             text: i18n('Month font size:')
         }
         Slider {
-            Layout.row: 6
+            Layout.row: 7
             Layout.column: 1
             id: monthFontSize
             stepSize: 1
@@ -130,12 +161,12 @@ Item {
         }
         
         Label {
-            Layout.row: 7
+            Layout.row: 8
             Layout.column: 0
             text: i18n('Month horizontal position:')
         }
         Slider {
-            Layout.row: 7
+            Layout.row: 8
             Layout.column: 1
             id: monthHorizontalPosition
             stepSize: 1
@@ -146,12 +177,12 @@ Item {
         }
         
         Label {
-            Layout.row: 8
+            Layout.row: 9
             Layout.column: 0
             text: i18n('Month vertical position:')
         }
         Slider {
-            Layout.row: 8
+            Layout.row: 9
             Layout.column: 1
             id: monthVerticalPosition
             stepSize: 1

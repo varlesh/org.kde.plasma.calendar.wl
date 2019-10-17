@@ -354,7 +354,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.52"
-     inkscape:cx="61.286714"
+     inkscape:cx="122.65035"
      inkscape:cy="92.144293"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -377,7 +377,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -703,40 +703,40 @@
     <g
        id="g1124"
        transform="matrix(0.57299993,0,0,0.57299993,-47.590428,686.83306)"
-       style="fill:#006db8;fill-opacity:1">
+       style="fill:#404040;fill-opacity:1">
       <path
          d="m 233.78907,725.73248 h -6.04 v -16.52 q 0,-1 0.04,-2.68 0.04,-1.72 0.12,-3 -0.2,0.24 -0.88,0.88 -0.64,0.6 -1.2,1.08 l -3.28,2.64 -2.92,-3.64 9.2,-7.32 h 4.96 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#006db8;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none"
          id="path1102"
          inkscape:connector-curvature="0" />
       <path
          d="m 262.3597,719.81248 h -3.44 v 5.92 h -5.88 v -5.92 h -12.2 v -4.2 l 12.52,-18.44 h 5.56 v 17.96 h 3.44 z m -9.32,-4.68 v -4.84 q 0,-0.92 0.04,-2.24 0.04,-1.32 0.08,-2.44 0.08,-1.16 0.12,-1.52 h -0.16 q -0.36,0.8 -0.8,1.56 -0.4,0.76 -0.92,1.56 l -5.24,7.92 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#006db8;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none"
          id="path1104"
          inkscape:connector-curvature="0" />
     </g>
     <g
        id="g1130"
        transform="matrix(0.1691475,0,0,0.1691475,47.86968,946.21172)"
-       style="fill:#ffffff;fill-opacity:1">
+       style="fill:#2c2c2c;fill-opacity:1">
       <path
          d="m 246.06907,761.41248 q 0,4.44 -1.52,7.76 -1.48,3.28 -4.44,5.12 -2.92,1.84 -7.2,1.84 -4.44,0 -7.4,-1.84 -2.92,-1.84 -4.36,-5.16 -1.44,-3.32 -1.44,-7.76 0,-4.36 1.44,-7.64 1.44,-3.32 4.36,-5.16 2.96,-1.84 7.44,-1.84 4.28,0 7.2,1.84 2.92,1.8 4.4,5.12 1.52,3.28 1.52,7.72 z m -22.56,0 q 0,5.4 2.28,8.52 2.28,3.08 7.12,3.08 4.84,0 7.08,-3.08 2.28,-3.12 2.28,-8.52 0,-5.4 -2.24,-8.44 -2.24,-3.08 -7.08,-3.08 -4.88,0 -7.16,3.08 -2.28,3.04 -2.28,8.44 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#2c2c2c;fill-opacity:1;stroke:none"
          id="path1106"
          inkscape:connector-curvature="0" />
       <path
          d="m 264.63907,749.93248 q -4.6,0 -7.24,3.08 -2.64,3.08 -2.64,8.44 0,5.32 2.44,8.44 2.48,3.08 7.4,3.08 1.84,0 3.52,-0.32 1.68,-0.32 3.32,-0.8 v 3.12 q -1.6,0.6 -3.32,0.88 -1.68,0.28 -4.04,0.28 -4.36,0 -7.28,-1.8 -2.92,-1.8 -4.4,-5.12 -1.44,-3.32 -1.44,-7.8 0,-4.32 1.56,-7.6 1.6,-3.32 4.68,-5.16 3.08,-1.88 7.48,-1.88 4.52,0 7.88,1.68 l -1.44,3.04 q -1.32,-0.6 -2.96,-1.08 -1.6,-0.48 -3.52,-0.48 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#2c2c2c;fill-opacity:1;stroke:none"
          id="path1109"
          inkscape:connector-curvature="0" />
       <path
          d="m 286.75157,775.73248 h -3.6 v -25.4 h -8.92 v -3.16 h 21.4 v 3.16 h -8.88 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#2c2c2c;fill-opacity:1;stroke:none"
          id="path1111"
          inkscape:connector-curvature="0" />
       <path
          d="m 298.9772,773.57248 q 0,-1.48 0.72,-2.08 0.72,-0.6 1.72,-0.6 1,0 1.76,0.6 0.76,0.6 0.76,2.08 0,1.44 -0.76,2.08 -0.76,0.64 -1.76,0.64 -1,0 -1.72,-0.64 -0.72,-0.64 -0.72,-2.08 z"
-         style="font-style:normal;font-weight:normal;font-size:medium;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-weight:normal;font-size:medium;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2c2c2c;fill-opacity:1;stroke:none"
          id="path1113"
          inkscape:connector-curvature="0" />
     </g>
@@ -851,17 +851,17 @@
          d="m 262.3597,719.81248 h -3.44 v 5.92 h -5.88 v -5.92 h -12.2 v -4.2 l 12.52,-18.44 h 5.56 v 17.96 h 3.44 z m -9.32,-4.68 v -4.84 q 0,-0.92 0.04,-2.24 0.04,-1.32 0.08,-2.44 0.08,-1.16 0.12,-1.52 h -0.16 q -0.36,0.8 -0.8,1.56 -0.4,0.76 -0.92,1.56 l -5.24,7.92 z" />
     </g>
     <g
-       style="fill:#414141;fill-opacity:1"
+       style="fill:#626262;fill-opacity:1"
        transform="matrix(0.56022409,0,0,0.56022409,-107.00776,699.62976)"
        id="g1180">
       <path
          d="m 233.78907,725.73248 h -6.04 v -16.52 q 0,-1 0.04,-2.68 0.04,-1.72 0.12,-3 -0.2,0.24 -0.88,0.88 -0.64,0.6 -1.2,1.08 l -3.28,2.64 -2.92,-3.64 9.2,-7.32 h 4.96 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#414141;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#626262;fill-opacity:1;stroke:none"
          id="path1176"
          inkscape:connector-curvature="0" />
       <path
          d="m 262.3597,719.81248 h -3.44 v 5.92 h -5.88 v -5.92 h -12.2 v -4.2 l 12.52,-18.44 h 5.56 v 17.96 h 3.44 z m -9.32,-4.68 v -4.84 q 0,-0.92 0.04,-2.24 0.04,-1.32 0.08,-2.44 0.08,-1.16 0.12,-1.52 h -0.16 q -0.36,0.8 -0.8,1.56 -0.4,0.76 -0.92,1.56 l -5.24,7.92 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#414141;fill-opacity:1;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';letter-spacing:0px;word-spacing:0px;fill:#626262;fill-opacity:1;stroke:none"
          id="path1178"
          inkscape:connector-curvature="0" />
     </g>
