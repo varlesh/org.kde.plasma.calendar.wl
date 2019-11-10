@@ -94,7 +94,7 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: plasmoid.configuration.dayFontSize
                 font.pointSize: -1
-                font.bold: true
+                font.weight: plasmoid.configuration.bold ? Font.Bold : Font.Normal
                 color: plasmoid.configuration.colorDay
                 text: {
                     var d = new Date(dataSource.data.Local.DateTime)

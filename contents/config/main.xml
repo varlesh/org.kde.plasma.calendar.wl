@@ -10,6 +10,9 @@
             <label>Icon</label>
             <default>mini-calendar-widget</default>
         </entry>
+        <entry name="bold" type="Bool">
+            <default>true</default>
+        </entry>
         <entry name="colorDay" type="String">
             <default>#4f4f4f</default>
         </entry>
