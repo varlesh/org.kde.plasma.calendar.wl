@@ -51,7 +51,7 @@ Item {
             Layout.row: 2
             Layout.column: 2
             id: bold
-            text: i18n('Use bold font')
+            text: i18n("Use bold font")
             Layout.alignment: Qt.AlignRight     
         }
         
@@ -72,7 +72,7 @@ Item {
         Label {
             Layout.row: 4
             Layout.column: 1
-            text: i18n('Font size:')
+            text: i18n("Font size:")
         }
         Slider {
             Layout.row: 4
@@ -88,7 +88,7 @@ Item {
         Label {
             Layout.row: 5
             Layout.column: 1
-            text: i18n('Horizontal position:')
+            text: i18n("Horizontal position:")
         }
         Slider {
             Layout.row: 5
@@ -104,7 +104,7 @@ Item {
         Label {
             Layout.row: 6
             Layout.column: 1
-            text: i18n('Vertical position:')
+            text: i18n("Vertical position:")
         }
         Slider {
             Layout.row: 6
@@ -171,7 +171,7 @@ Item {
         Label {
             Layout.row: 10
             Layout.column: 1
-            text: i18n('Font size:')
+            text: i18n("Font size:")
         }
         Slider {
             Layout.row: 10
@@ -187,7 +187,7 @@ Item {
         Label {
             Layout.row: 11
             Layout.column: 1
-            text: i18n('Horizontal position:')
+            text: i18n("Horizontal position:")
         }
         Slider {
             Layout.row: 11
@@ -203,7 +203,7 @@ Item {
         Label {
             Layout.row: 12
             Layout.column: 1
-            text: i18n('Vertical position:')
+            text: i18n("Vertical position:")
         }
         Slider {
             Layout.row: 12
