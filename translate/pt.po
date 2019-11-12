@@ -1,0 +1,71 @@
+# Translation of Calendar WL in LANGUAGE
+# Copyright (C) 2019
+# This file is distributed under the same license as the Calendar WL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: calendarwl\n"
+"Report-Msgid-Bugs-To: https://github.com/varlesh/org.kde.plasma.calendar.wl\n"
+"POT-Creation-Date: 2019-11-12 13:14+0400\n"
+"PO-Revision-Date: 2019-11-12 15:45+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Language: pt\n"
+
+#: ../contents/config/config.qml:6
+msgid "Appearance icon"
+msgstr "Ícone Aparência"
+
+#: ../contents/ui/config/ConfigAppearance.qml:30
+msgid "Icon:"
+msgstr "Ícone:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:46
+msgid "Day settings"
+msgstr "Configurações do dia"
+
+#: ../contents/ui/config/ConfigAppearance.qml:54
+msgid "Use bold font"
+msgstr "Use fonte em negrito"
+
+#: ../contents/ui/config/ConfigAppearance.qml:61
+#: ../contents/ui/config/ConfigAppearance.qml:160
+msgid "Color:"
+msgstr "Cor:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:75
+#: ../contents/ui/config/ConfigAppearance.qml:174
+msgid "Font size:"
+msgstr "Tamanho da fonte:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:91
+#: ../contents/ui/config/ConfigAppearance.qml:190
+msgid "Horizontal position:"
+msgstr "Posição horizontal:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:107
+#: ../contents/ui/config/ConfigAppearance.qml:206
+msgid "Vertical position:"
+msgstr "Posição vertical:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:123
+msgid "Month settings"
+msgstr "Configurações do mês"
+
+#: ../contents/ui/config/ConfigAppearance.qml:130
+msgid "Format:"
+msgstr "Formato:"
+
+#: ../contents/ui/config/ConfigAppearance.qml:138
+msgid "Short"
+msgstr "Curto"
+
+#: ../contents/ui/config/ConfigAppearance.qml:142
+msgid "Long"
+msgstr "Longo"
